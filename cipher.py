@@ -24,4 +24,4 @@ for letter in message:
     else: 
         cipherText = cipherText + letter
 
-print(cipherText)
+print('The encrypted sentence is: ',cipherText)
