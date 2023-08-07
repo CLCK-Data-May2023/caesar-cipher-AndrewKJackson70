@@ -4,7 +4,7 @@ original_alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 message = input("Please enter the message you want to encrypt: ")
 #define where to shift in the index
 shift = 5 
-#used to convert list into a dictionary
+#used to into a dictionary
 cipher = {}
 cipherText = " "
 #ensures that input is converted to lowercase to match output constraints
@@ -21,7 +21,7 @@ for letter in message:
     if letter in original_alpha:
         letter = cipher[letter]
         cipherText = cipherText + letter
-    else: 
+    else:
         cipherText = cipherText + letter
 
-print('The encrypted sentence is: ',cipherText)
+print('The encrypted sentence is:',cipherText)
