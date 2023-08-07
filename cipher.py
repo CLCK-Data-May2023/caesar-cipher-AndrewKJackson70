@@ -1,12 +1,12 @@
 #define unencrypted alphabet as a list
-original_alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+original_alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 #gain original message from user
-message = input("Please enter the message you want to encrypt: ")
+message = input("Please enter the message you want to encrypt:")
 #define where to shift in the index
 shift = 5 
 #used to convert list into dictionary
 cipher = {}
-cipherText = " "
+cipherText = ""
 #ensures that input is converted to lowercase to match output constraints
 message = message.lower()
 
@@ -24,4 +24,4 @@ for letter in message:
     else:
         cipherText = cipherText + letter
 
-print('The encrypted sentence is: ',cipherText)
+print("The encrypted sentence is:",cipherText)
